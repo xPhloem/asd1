@@ -110,10 +110,17 @@ namespace PayrollSys
                     MySqlDataReader da = command.ExecuteReader();
                     while (da.Read())
                     {
-                        decimal grossInc = da.GetDecimal(6);
+
+                        decimal workingDay = da.GetDecimal(0);
+
+                        decimal rpd = da.GetDecimal(1);
+
+                        decimal GrossINC = rpd * workingDay;
+
+
                         decimal OThour = da.GetDecimal(3);
                         decimal HolidayPay = da.GetDecimal(4);
-                        decimal TotalPayment = OThour + HolidayPay + grossInc;
+                        decimal TotalPayment = OThour + HolidayPay + GrossINC;
 
                         decimal Pagibig = da.GetDecimal(8);
                         decimal PhilHealth = da.GetDecimal(9);

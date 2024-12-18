@@ -78,6 +78,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Info;
             this.label1.Location = new System.Drawing.Point(22, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 16);
@@ -89,6 +90,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::PayrollSys.Properties.Resources.BOLDBLUE;
             this.ClientSize = new System.Drawing.Size(597, 338);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxID);
@@ -97,7 +100,7 @@
             this.Controls.Add(this.btnPrint);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "reports";
-            this.Text = "reports";
+            this.Text = "Reports";
             this.Load += new System.EventHandler(this.reports_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

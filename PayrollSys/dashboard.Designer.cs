@@ -37,9 +37,10 @@
             // 
             // btnemp
             // 
-            this.btnemp.Location = new System.Drawing.Point(31, 62);
+            this.btnemp.Location = new System.Drawing.Point(41, 76);
+            this.btnemp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnemp.Name = "btnemp";
-            this.btnemp.Size = new System.Drawing.Size(128, 23);
+            this.btnemp.Size = new System.Drawing.Size(171, 28);
             this.btnemp.TabIndex = 0;
             this.btnemp.Text = "Employee Management";
             this.btnemp.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@
             // 
             // btnpayroll
             // 
-            this.btnpayroll.Location = new System.Drawing.Point(165, 62);
+            this.btnpayroll.Location = new System.Drawing.Point(220, 76);
+            this.btnpayroll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnpayroll.Name = "btnpayroll";
-            this.btnpayroll.Size = new System.Drawing.Size(128, 23);
+            this.btnpayroll.Size = new System.Drawing.Size(171, 28);
             this.btnpayroll.TabIndex = 1;
             this.btnpayroll.Text = "Payroll";
             this.btnpayroll.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@
             // 
             // btnattendance
             // 
-            this.btnattendance.Location = new System.Drawing.Point(299, 62);
+            this.btnattendance.Location = new System.Drawing.Point(399, 76);
+            this.btnattendance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnattendance.Name = "btnattendance";
-            this.btnattendance.Size = new System.Drawing.Size(128, 23);
+            this.btnattendance.Size = new System.Drawing.Size(171, 28);
             this.btnattendance.TabIndex = 2;
             this.btnattendance.Text = "Attendance";
             this.btnattendance.UseVisualStyleBackColor = true;
@@ -67,9 +70,12 @@
             // 
             // btnclose
             // 
-            this.btnclose.Location = new System.Drawing.Point(192, 106);
+            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose.ForeColor = System.Drawing.Color.Red;
+            this.btnclose.Location = new System.Drawing.Point(256, 130);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(75, 23);
+            this.btnclose.Size = new System.Drawing.Size(100, 28);
             this.btnclose.TabIndex = 3;
             this.btnclose.Text = "LOG OUT";
             this.btnclose.UseVisualStyleBackColor = true;
@@ -77,9 +83,11 @@
             // 
             // btnreport
             // 
-            this.btnreport.Location = new System.Drawing.Point(322, 160);
+            this.btnreport.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreport.Location = new System.Drawing.Point(429, 197);
+            this.btnreport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnreport.Name = "btnreport";
-            this.btnreport.Size = new System.Drawing.Size(128, 23);
+            this.btnreport.Size = new System.Drawing.Size(171, 28);
             this.btnreport.TabIndex = 4;
             this.btnreport.Text = "GET PAYSLIP";
             this.btnreport.UseVisualStyleBackColor = true;
@@ -87,16 +95,19 @@
             // 
             // dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 195);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::PayrollSys.Properties.Resources.BOLDBLUE;
+            this.ClientSize = new System.Drawing.Size(616, 240);
             this.Controls.Add(this.btnreport);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnattendance);
             this.Controls.Add(this.btnpayroll);
             this.Controls.Add(this.btnemp);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "dashboard";
-            this.Text = "dashboard";
+            this.Text = "Dashboard";
             this.ResumeLayout(false);
 
         }

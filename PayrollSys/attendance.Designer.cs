@@ -46,84 +46,97 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 52);
+            this.label1.Location = new System.Drawing.Point(49, 64);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(105, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee Code";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(327, 34);
+            this.label2.Location = new System.Drawing.Point(436, 42);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Time In";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(533, 34);
+            this.label3.Location = new System.Drawing.Point(711, 42);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Time Out";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(88, 133);
+            this.label4.Location = new System.Drawing.Point(117, 164);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 13);
+            this.label4.Size = new System.Drawing.Size(36, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Date";
             // 
             // empcode
             // 
-            this.empcode.Location = new System.Drawing.Point(124, 50);
+            this.empcode.Location = new System.Drawing.Point(165, 62);
+            this.empcode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.empcode.Name = "empcode";
-            this.empcode.Size = new System.Drawing.Size(200, 20);
+            this.empcode.Size = new System.Drawing.Size(267, 22);
             this.empcode.TabIndex = 4;
             // 
             // timein
             // 
             this.timein.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timein.Location = new System.Drawing.Point(330, 50);
+            this.timein.Location = new System.Drawing.Point(440, 62);
+            this.timein.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.timein.Name = "timein";
-            this.timein.Size = new System.Drawing.Size(200, 20);
+            this.timein.Size = new System.Drawing.Size(265, 22);
             this.timein.TabIndex = 5;
             // 
             // timeout
             // 
             this.timeout.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timeout.Location = new System.Drawing.Point(536, 50);
+            this.timeout.Location = new System.Drawing.Point(715, 62);
+            this.timeout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.timeout.Name = "timeout";
-            this.timeout.Size = new System.Drawing.Size(200, 20);
+            this.timeout.Size = new System.Drawing.Size(265, 22);
             this.timeout.TabIndex = 6;
             // 
             // empdate
             // 
-            this.empdate.Location = new System.Drawing.Point(124, 127);
+            this.empdate.Location = new System.Drawing.Point(165, 156);
+            this.empdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.empdate.Name = "empdate";
-            this.empdate.Size = new System.Drawing.Size(200, 20);
+            this.empdate.Size = new System.Drawing.Size(265, 22);
             this.empdate.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(615, 193);
+            this.button1.BackColor = System.Drawing.SystemColors.Info;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(820, 238);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 23);
+            this.button1.Size = new System.Drawing.Size(161, 28);
             this.button1.TabIndex = 8;
             this.button1.Text = "LOG ATTENDANCE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // attendance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 228);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::PayrollSys.Properties.Resources.istockphoto_1160194662_170667a;
+            this.ClientSize = new System.Drawing.Size(1016, 281);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.empdate);
             this.Controls.Add(this.timeout);
@@ -133,8 +146,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "attendance";
-            this.Text = "attendance";
+            this.Text = "Attendance";
             this.ResumeLayout(false);
             this.PerformLayout();
 
